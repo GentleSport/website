@@ -1,0 +1,162 @@
+{
+  "type": "theme",
+  "name": "clean",
+  "version": "4.7.0",
+  "revision": "10113",
+  "path": "application\/themes\/clean",
+  "repository": null,
+  "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+  "title": "Clean",
+  "description": null,
+  "thumb": "theme.jpg",
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.7.0": {
+      "images\/*": "Optimized images",
+      "manifest.php": "Incremented version"
+    },
+    "4.6.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with user-select"
+    },
+    "4.2.9p1": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with missing image"
+    }
+  },
+  "meta": {
+    "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+    "title": "Clean",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/clean": {
+      "type": "directory",
+      "path": "application\/themes\/clean",
+      "structure": [
+        {
+          "path": "theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 6145,
+          "sha1": "fb73b6732d713ab8c7dc9c128a6bac2757514d33"
+        },
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 7872,
+          "sha1": "cc2e3b845884d33ee40c6983677206f3914a492a"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 1417,
+          "sha1": "b06fa93c2c1dd736aefafb0714e6fbd894859486"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 19185,
+          "sha1": "67fe70f0beba9a58deb6ce42ab6d849a4066efee"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 37179,
+          "sha1": "49f934a9fe3229a67053e4a4b423a0cd92ed42bc"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/topbar_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 170,
+          "sha1": "565dda63d0039d02852e14ef58766797f25ee2f7"
+        },
+        {
+          "path": "images\/buttonbg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 105,
+          "sha1": "bfbe9d72ee9861006d0538d7a4c9d9c3e0ebc6c4"
+        },
+        {
+          "path": "images\/bullet_active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 173,
+          "sha1": "7eab9cf04e67034273d6532fe89a47ae58445e2f"
+        },
+        {
+          "path": "images\/topbar_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 13285,
+          "sha1": "189deb8f84195b62aa20afb1c9433503cf44534f"
+        },
+        {
+          "path": "images\/bullet_hover.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 179,
+          "sha1": "932a55bc938965bc94a48ea2a7d540a0e35dccaf"
+        },
+        {
+          "path": "images\/bullet.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 177,
+          "sha1": "88d5bbc5e895b976c41778c8eb37eb456b84908c"
+        }
+      ]
+    }
+  }
+}

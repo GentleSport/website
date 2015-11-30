@@ -1,0 +1,17 @@
+# gentlsport:local
+FROM gentlesport:base
+
+MAINTAINER Hayk Avetisyan
+
+RUN apt-get update --fix-missing && \
+    apt-get install -y --force-yes --no-install-recommends \
+    php5-common \
+    php5-cli php5-fpm
+
+COPY ./templates/supervisord.conf /etc/supervisor/supervisord.conf
+
+COPY ./Dockerfiles/nginx_site_conf.tmpl /etc/nginx/sites-available/default
+
+CMD ["/usr/local/bin/supervisord","-c","/etc/supervisor/supervisord.conf"]
+
+EXPOSE 80 443

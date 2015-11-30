@@ -1,0 +1,174 @@
+{
+  "type": "theme",
+  "name": "midnight",
+  "version": "4.7.0",
+  "revision": "10113",
+  "path": "application\/themes\/midnight",
+  "repository": null,
+  "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+  "title": "Midnight",
+  "description": null,
+  "thumb": "midnight_theme.jpg",
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.7.0": {
+      "images\/*": "Optimized images",
+      "manifest.php": "Incremented version"
+    },
+    "4.6.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with user-select"
+    },
+    "4.2.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with feed comment option list"
+    },
+    "4.1.8": {
+      "manifest.php": "Incremented version",
+      "mobile.css": "Added styles for HTML5 input elements",
+      "theme.css": "Added styles for HTML5 input elements"
+    },
+    "4.1.4": {
+      "mainfest.php": "Incremented version",
+      "mobile.css": "Added new type of stylesheet"
+    },
+    "4.0.1": {
+      "manifest.php": "Incremented version; removed deprecated meta key"
+    }
+  },
+  "meta": {
+    "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+    "title": "Midnight",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/midnight": {
+      "type": "directory",
+      "path": "application\/themes\/midnight",
+      "structure": [
+        {
+          "path": "midnight_theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 6613,
+          "sha1": "66166165921441c82fc8134848a3701f3857b73b"
+        },
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 7325,
+          "sha1": "a5a269d68aee966ee78b3dc7a1f441985c3a28d3"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 2529,
+          "sha1": "c526bdc43c88adda69297efeceb505f4706f00fc"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 19143,
+          "sha1": "6c1fe6606492857d855d9a61e3dc25c7b741f24e"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 29949,
+          "sha1": "6bd7c036ad228481ac19e64754c94dffbaef0e55"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/topbar_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 254,
+          "sha1": "18da5fd9ad8e340ae8ba29b6acbabcd1918bdfed"
+        },
+        {
+          "path": "images\/nophoto_event_thumb_profile.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 5832,
+          "sha1": "54422322cb1c232114efd429351f7d5489ae1dc0"
+        },
+        {
+          "path": "images\/nophoto_user_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 3212,
+          "sha1": "bd6f15e8f7b3607ad3ef7d1b936545cf5ac437ce"
+        },
+        {
+          "path": "images\/nophoto_event_thumb_normal.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 4995,
+          "sha1": "224c78438fe5d2b542058d420729881b78c2ffa3"
+        },
+        {
+          "path": "images\/topbar_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 13285,
+          "sha1": "189deb8f84195b62aa20afb1c9433503cf44534f"
+        },
+        {
+          "path": "images\/nophoto_user_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 731,
+          "sha1": "df297bc518b4da8f9500cf2ca004219a402942b4"
+        }
+      ]
+    }
+  }
+}

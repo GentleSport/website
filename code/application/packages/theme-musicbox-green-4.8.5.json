@@ -1,0 +1,234 @@
+{
+  "type": "theme",
+  "name": "musicbox-green",
+  "version": "4.8.5",
+  "revision": "10267",
+  "path": "application\/themes\/musicbox-green",
+  "repository": null,
+  "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+  "title": "Musicbox Green",
+  "description": null,
+  "thumb": "musicbox_green.png",
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.8.5": {
+      "theme.css": "Display the submit button when flash is disabled",
+      "manifest.php": "Incremented version"
+    },
+    "4.7.0": {
+      "images\/*": "Optimized images",
+      "manifest.php": "Incremented version"
+    },
+    "4.6.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with user-select"
+    }
+  },
+  "meta": {
+    "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+    "title": "Musicbox Green",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/musicbox-green": {
+      "type": "directory",
+      "path": "application\/themes\/musicbox-green",
+      "structure": [
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 6538,
+          "sha1": "09076493d2669fc9524211b49f4b74e45c1542e8"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 2127,
+          "sha1": "3539d50ef7dbfb4287bcac54e0e8d7c294554176"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 20088,
+          "sha1": "88f61a5ca93c27f255768a505336c324dda4ed32"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 33805,
+          "sha1": "2fe8181abeb6f8b65848d92f35774f168853cf8a"
+        },
+        {
+          "path": "musicbox_green.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 7907,
+          "sha1": "aae87236b7fe57c73d98844e803bb0795494b0fe"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/icon_home.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 234,
+          "sha1": "b156b6a533e9fff1c16dba478a5686f1fb22a3bf"
+        },
+        {
+          "path": "images\/icon_home_active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 258,
+          "sha1": "5b9010b0d2a67a68f2e709874323a2edb99dd714"
+        },
+        {
+          "path": "images\/icon_arrow_small.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 128,
+          "sha1": "0a94baec741bc91646d0e525eef854db2f7b9482"
+        },
+        {
+          "path": "images\/nophoto_event_thumb_profile.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 5832,
+          "sha1": "54422322cb1c232114efd429351f7d5489ae1dc0"
+        },
+        {
+          "path": "images\/comment_arrow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 187,
+          "sha1": "3bda1ede2236199cd4424f16b10c156ddb592ea4"
+        },
+        {
+          "path": "images\/nophoto_user_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 3212,
+          "sha1": "bd6f15e8f7b3607ad3ef7d1b936545cf5ac437ce"
+        },
+        {
+          "path": "images\/icon_heart.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 330,
+          "sha1": "a7e4ab6fdf160c18cc786125f3e4bffe01402175"
+        },
+        {
+          "path": "images\/icon_intro.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 2195,
+          "sha1": "039be552943ee2e8c4ed8c4c7f9b6fb6d67de2f7"
+        },
+        {
+          "path": "images\/transparent.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 105,
+          "sha1": "261541bd46ef884af76e96aed6ddb37f50299411"
+        },
+        {
+          "path": "images\/nophoto_event_thumb_normal.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 4995,
+          "sha1": "224c78438fe5d2b542058d420729881b78c2ffa3"
+        },
+        {
+          "path": "images\/nophoto_user_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 731,
+          "sha1": "df297bc518b4da8f9500cf2ca004219a402942b4"
+        },
+        {
+          "path": "images\/bg_wrapper.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 93,
+          "sha1": "7275b0881656301250923d9ba512efbba187d2b7"
+        },
+        {
+          "path": "images\/foreground.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 115,
+          "sha1": "ed014d048e2176872ba03621e239288f9a76097e"
+        },
+        {
+          "path": "images\/icon_search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 374,
+          "sha1": "5f6b98f776aaa6308bb9b7ac357bf1ccf2aa9bc6"
+        },
+        {
+          "path": "images\/icon_arrow_big.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 129,
+          "sha1": "b074df232c4bbe802389ea922fb20121cab92144"
+        }
+      ]
+    }
+  }
+}

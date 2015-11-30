@@ -1,0 +1,18 @@
+web:
+  build: ./website
+  command: php -S 0.0.0.0:8000 -t /website
+  ports:
+    - "8000:8000"
+  links:
+    - db
+  volumes:
+    - ./website/code:/website
+db:
+  image: orchardup/mysql
+  environment:
+    MYSQL_DATABASE: gs
+    MYSQL_ROOT_PASSWORD: gentlesport
+    MYSQL_USER: dbadmin
+    MYSQL_PASSWORD: gentlesport
+  ports:
+    - "3306:3306"

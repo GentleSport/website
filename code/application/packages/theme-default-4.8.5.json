@@ -1,0 +1,164 @@
+{
+  "type": "theme",
+  "name": "default",
+  "version": "4.8.5",
+  "revision": "10267",
+  "path": "application\/themes\/default",
+  "repository": null,
+  "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+  "title": "Default",
+  "description": null,
+  "thumb": "default_theme.jpg",
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.8.5": {
+      "theme.css": "Display the submit button when flash is disabled",
+      "manifest.php": "Incremented version"
+    },
+    "4.7.0": {
+      "images\/*": "Optimized images",
+      "manifest.php": "Incremented version"
+    },
+    "4.6.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with user-select"
+    },
+    "4.2.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with feed comment option list"
+    },
+    "4.1.8": {
+      "manifest.php": "Incremented version",
+      "mobile.css": "Added styles for HTML5 input elements",
+      "theme.css": "Added styles for HTML5 input elements; added styles for drop-downs in main menu"
+    },
+    "4.1.4": {
+      "mainfest.php": "Incremented version",
+      "mobile.css": "Added new type of stylesheet"
+    },
+    "4.1.2": {
+      "manifest.php": "Incremented version; removed deprecated meta key",
+      "theme.css": "Added styles for liking comments"
+    },
+    "4.1.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Style tweaks"
+    },
+    "4.0.4": {
+      "constants.css": "Added constant theme_pulldown_contents_list_background_color_active",
+      "manifest.php": "Incremented version",
+      "theme.css": "Improved RTL support"
+    },
+    "4.0.3": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Added styles for highlighted text in search"
+    },
+    "4.0.2": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Added styles for delete comment link"
+    }
+  },
+  "meta": {
+    "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+    "title": "Default",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/default": {
+      "type": "directory",
+      "path": "application\/themes\/default",
+      "structure": [
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 7640,
+          "sha1": "c517c1367d8ed090b3a7d129b5f8079e6d7fa738"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 2753,
+          "sha1": "c711518f019ad4c7853843dc9cb4387fd17c15dc"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 19187,
+          "sha1": "99f7d4f1209c9fb682e165c96a3e2763fc013e8b"
+        },
+        {
+          "path": "default_theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 6099,
+          "sha1": "c856fdd2883d36da80815b29ded822a70d2a3ee8"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 32332,
+          "sha1": "286fb8faf47a37827c78d19e5ef9474ebd6afc69"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/topbar_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 170,
+          "sha1": "565dda63d0039d02852e14ef58766797f25ee2f7"
+        },
+        {
+          "path": "images\/topbar_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 13285,
+          "sha1": "189deb8f84195b62aa20afb1c9433503cf44534f"
+        }
+      ]
+    }
+  }
+}

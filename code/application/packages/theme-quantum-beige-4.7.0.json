@@ -1,0 +1,190 @@
+{
+  "type": "theme",
+  "name": "quantum-beige",
+  "version": "4.7.0",
+  "revision": "10113",
+  "path": "application\/themes\/quantum-beige",
+  "repository": null,
+  "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+  "title": "Quantum Beige",
+  "description": null,
+  "thumb": "quantum_theme.png",
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.7.0": {
+      "images\/*": "Optimized images",
+      "manifest.php": "Incremented version"
+    },
+    "4.6.0": {
+      "manifest.php": "Incremented version",
+      "theme.css": "Fixed issue with user-select"
+    }
+  },
+  "meta": {
+    "date": "Mon, 22 Jun 2015 17:06:09 +0000",
+    "title": "Quantum Beige",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/quantum-beige": {
+      "type": "directory",
+      "path": "application\/themes\/quantum-beige",
+      "structure": [
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 7315,
+          "sha1": "4e058287c781b2b77b640d47a6849a58ca131130"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 1284,
+          "sha1": "095fd309e9074647f3912e737d56d001baf77fe1"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 19971,
+          "sha1": "8ce7ca6b77065e9d0d31f6476d3a24a677d4dddc"
+        },
+        {
+          "path": "quantum_theme.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 19062,
+          "sha1": "83a16244b2d6ca49f67d713753348175f8cb1558"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 34949,
+          "sha1": "e7319baa351677e2dd67912d15f50aa30da9b504"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/button.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 143,
+          "sha1": "762d939474dd9e405da78a9d7a0a33db8043c54e"
+        },
+        {
+          "path": "images\/transparent_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 105,
+          "sha1": "8f45d64dae27f1253f1ff5ddb44b5cdec8351209"
+        },
+        {
+          "path": "images\/wrapper_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 154,
+          "sha1": "2e1daf0284a71d59af9aec5e4f404ad5905787c3"
+        },
+        {
+          "path": "images\/comment_first_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 1241,
+          "sha1": "69787f258f86c83079651cd6b4253c766fbd11ec"
+        },
+        {
+          "path": "images\/button_hover.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 119,
+          "sha1": "ff6b2a14ea360cb148ad1f9982ad8cc3b1b841ec"
+        },
+        {
+          "path": "images\/header_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 22905,
+          "sha1": "f7489022b045d3e9d271374290f133a705de406e"
+        },
+        {
+          "path": "images\/widget_header_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 142,
+          "sha1": "a899bd456ee6bbd0e796428669ba468660d590a3"
+        },
+        {
+          "path": "images\/mini_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 121,
+          "sha1": "648064ada07c5422bde9d55781bf54bad4c070aa"
+        },
+        {
+          "path": "images\/foreground.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 130,
+          "sha1": "fe58807f59065de0ba80b595cacfbe999fc34443"
+        },
+        {
+          "path": "images\/main_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 145,
+          "sha1": "76bf1ecf3a314332d36eadab05c2e809b5ecf461"
+        }
+      ]
+    }
+  }
+}
