@@ -1,12 +1,13 @@
 web:
-  build: ./website
-  command: php -S 0.0.0.0:8000 -t /website
+  build: ./wp
+  command: php -S 0.0.0.0:8000 -t /wp
+#  command: service apache2 start
   ports:
     - "8000:8000"
   links:
     - db
   volumes:
-    - ./website/code:/website
+    - ./wp:/wp
 db:
   image: orchardup/mysql
   environment:
