@@ -1,15 +1,23 @@
 web:
+  container_name: web
   build: ./wp
-  command: php -S 0.0.0.0:8000 -t /wp
+#  image: havetisyan/docker:website_web
+  command: php -S 0.0.0.0:8000 -t /code
 #  command: service apache2 start
   ports:
     - "8000:8000"
+    - "80:80"
   links:
     - db
   volumes:
-    - ./wp:/wp
+    - ./wp:/code
+  environment:
+    - DEBUG=true
+#  service: web
 db:
-  image: orchardup/mysql
+  container_name: db
+  #image: orchardup/mysql
+  image: havetisyan/docker:website_db
   environment:
     MYSQL_DATABASE: gs
     MYSQL_ROOT_PASSWORD: gentlesport

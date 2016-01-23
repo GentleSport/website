@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# database connection parameters
+DBHOST=website_db_1
+DBUSER=dbadmin
+DBPASS=gentlesport
+DBNAME=gs
+DBPORT=3306
+
+DUMP_FOLDER="backup_db_`date +%Y%m%d%H%M%S`"
+DUMP_FOLDER_DEFAULT="backup_db"
+STRUCTURE_FILE=$DUMP_FOLDER"/_structure.sql"
+DUMP_FILE=$DUMP_FOLDER"/_data.sql"
+
+while [ "$1" != "" ]; do
+    case $1 in
+        -h | --host )         DBHOST=$2
+                              shift 2
+                                ;;
+        -p | --port )         DBPORT=$2
+                              shift 2
+                                ;;
+        -d | --database )     DBNAME=$2
+                              shift 2
+                                ;;
+        -P | --password )     DBPASS=$2
+                              shift 2
+                                ;;
+        -U | --user )         DBHOST=$2
+                              shift 2
+                                ;;
+        -f | --folder )       DATA_FOLDER=$2
+                              shift 2
+                                ;;
+        * )                    break
+                                ;;
+    esac
+done
+
+#MDB_PREF=${MDB:0:13}
+#cd /tmp && tar xzf $LASTDUMP 2>&1;
+#REALDBCOUNT=$(mysql -h $MHOST -u $MUSER -p$MPASS -P $MPORT -e 'show Databases ' | grep $MDB_PREF | wc -l)
+# while [ "$ACTUALDBCOUNT" -le "$REALDBCOUNT" ]
+#do  
+#    REMOVABAL_DB_NAME=$(mysql -h $MHOST -u $MUSER -p$MPASS -P $MPORT -e 'show Databases' | grep $MDB_PREF | head -1 )
+#    mysql -h $MHOST -u $MUSER -p$MPASS -P $MPORT -e 'DROP DATABASE '$REMOVABAL_DB_NAME';'
+#    REALDBCOUNT=$(mysql -h $MHOST -u $MUSER -p$MPASS -P $MPORT -e 'show Databases' | grep $MDB_PREF | wc -l)
+#done
+
+cd $DUMP_FOLDER_DEFAULT
+
+mysql -h $DBHOST -u $DBHOST -p$DBPASS -P $DBPORT -e 'CREATE DATABASE '$DBNAME' CHARACTER SET utf8;'
+
+mysql -h $DBHOST -u $DBHOST -p$DBPASS -P $DBPORT $DBNAME < $STRUCTURE_FILE
+
+mysql -h $DBHOST -u $DBHOST -p$DBPASS -P $DBPORT $DBNAME < $DUMP_FILE
+
+cd $DUMP_FOLDER_DEFAULT
+
+#for DATAFILE in $(ls -1 *.txt)
+#do
+#        TABLENAME=$(echo $DATAFILE | cut -d'.' -f 1)
+#        mysql --local-infile -h $MHOST -u $MUSER -p$MPASS -P $MPORT $MDB -e "SET FOREIGN_KEY_CHECKS = 0;LOAD DATA LOCAL INFILE '$DUMPDIR/$DATAFILE' INTO TABLE $TABLENAME;SET FOREIGN_KEY_CHECKS = 0;"
+#done

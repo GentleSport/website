@@ -1,0 +1,71 @@
+# database connection parameters
+DBHOST=website_db_1
+DBUSER=dbadmin
+DBPASS=gentlesport
+DBNAME=gs
+DBPORT=3306
+
+DATA_FOLDER="backup_db_`date +%Y%m%d%H%M%S`"
+STRUCTURE_FILE=$DATA_FOLDER"/_structure.sql"
+DATA_FILE=$DATA_FOLDER"/_data.sql"
+
+while [ "$1" != "" ]; do
+    case $1 in
+        -h | --host )         DBHOST=$2
+                              shift 2
+                                ;;
+        -p | --port )         DBPORT=$2
+                              shift 2
+                                ;;
+        -d | --database )     DBPASS=$2
+                              shift 2
+                                ;;
+        -P | --password )     DBPASS=$2
+                              shift 2
+                                ;;
+        -U | --user )         DBUSER=$2
+                              shift 2
+                                ;;
+        -f | --folder )       DATA_FOLDER=$2
+                              shift 2
+                                ;;
+        * )                    break
+                                ;;
+    esac
+done
+
+echo "Backing up database $db from host $host"
+
+# REMOVE OLD BACKUP FILES
+#cd /mysql/backup
+#find *_$structfile -type f -mtime +3 2>/dev/null|xargs rm 2>/dev/null
+#find *_$datafile -type f -mtime +3 2>/dev/null|xargs rm 2>/dev/null
+#find *_$datafolder -type d -mtime +3 2>/dev/null|xargs rm 2>/dev/null
+mkdir $datafolder
+rm -rf backup_db
+ln -sf $datafolder backup_db
+
+# dump structure
+echo "Dumping database structure to $structfile"
+#mysqldump -h $host -u $user -p$pass --set-gtid-purged=OFF --routines --triggers --events --no-data $db > `date +%Y%m%d%H%M`_$structfile
+mysqldump -h $DBHOST -u $DBUSER -p$DBPASS --routines --triggers --events --no-data $DBPASS > $STRUCTURE_FILE
+
+# dump data
+echo "Dumping database data to compressed $datafile"
+#mysqldump -h $host -u $user -p$pass --set-gtid-purged=OFF --skip-triggers --compact --no-create-info --single-transaction $db | gzip --rsyncable --stdout > `date +%Y%m%d%H%M%S`_$datafile
+#mysqldump -h $host -u $user -p$pass --skip-triggers --compact --no-create-info --single-transaction $db | gzip --rsyncable --stdout > `date +%Y%m%d%H%M%S`_$datafile
+mysqldump -h $DBHOST -u $DBUSER -p$DBPASS --skip-triggers --compact --no-create-info --single-transaction $DBPASS > $DATA_FILE
+#mysqldump -h $host \
+#          -u $user \
+#          -p$pass \
+#          --compact \
+#          --default-character-set=UTF8 \
+#          --no-create-info \
+#          --routines \
+#          --opt \
+#          -T $datafolder/ $db;
+
+#echo "Use restore_database.sh to restore the dump to a new database instance"
+echo "Done"
+
+exit 0
